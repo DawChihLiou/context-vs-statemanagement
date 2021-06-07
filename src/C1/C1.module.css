@@ -1,0 +1,21 @@
+.box {
+  width: 100%;
+  background-color: lightsalmon;
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
