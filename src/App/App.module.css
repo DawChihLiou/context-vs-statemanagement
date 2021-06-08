@@ -1,6 +1,5 @@
 .main {
   width: 100%;
-  max-width: 864px;
   min-height: calc(100vh - 4rem);
   display: flex;
   flex-direction: column;
@@ -9,4 +8,25 @@
   margin: 2rem auto;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.container {
+  display: flex;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 64rem) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
+
+.container > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container > *:not(:last-child) {
+  margin-right: 1rem;
 }

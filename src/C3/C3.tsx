@@ -4,15 +4,30 @@ import C6 from '../C6';
 import C7 from '../C7';
 import C8 from '../C8';
 
-export default function C3() {
+type C3Props = {
+  signal?: boolean;
+};
+
+/**
+ * Simulates "Reconciliation needed".
+ *  - SCU: true
+ *  - vDOMq: false
+ */
+export default function C3({ signal = false }: C3Props) {
   return (
-    <section className={styles.box}>
-      <h2>C3</h2>
+    <article className={styles.box}>
+      {signal ? (
+        <h2>
+          C3 <span className={styles.span}>changed</span>
+        </h2>
+      ) : (
+        <h2>C3</h2>
+      )}
       <section>
-        <C6 />
+        <C6 signal={signal} />
         <C7 />
-        <C8 />
+        <C8 signal={signal} />
       </section>
-    </section>
+    </article>
   );
 }

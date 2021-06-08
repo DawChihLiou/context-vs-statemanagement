@@ -1,5 +1,7 @@
 .box {
   width: 100%;
+  max-width: 32rem;
+  border: 0.25rem solid lightsalmon;
   background-color: lightsalmon;
   border-radius: 0.5rem;
   padding-left: 2rem;
@@ -8,9 +10,13 @@
   padding-bottom: 2rem;
 }
 
+.box.highlight {
+  border: 0.25rem solid #fff;
+}
+
 .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: auto;
   justify-content: center;
 }
 

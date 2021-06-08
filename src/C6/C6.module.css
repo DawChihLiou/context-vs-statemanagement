@@ -1,11 +1,18 @@
 .box {
   width: 100%;
   margin: 1rem 0;
-  padding: 2rem;
+  padding: 1rem;
   background-color: tomato;
   border-radius: 0.5rem;
 }
 
 .container {
   display: flex;
+}
+
+.span {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: lightskyblue;
+  vertical-align: super;
 }

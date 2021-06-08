@@ -1,8 +1,13 @@
 .box {
-  width: calc(50% - 2rem);
-  min-width: 224px;
+  width: calc(50% - 2.5rem);
+  min-width: 10rem;
+  border: 0.25rem solid coral;
   margin: 1rem;
-  padding: 2rem;
+  padding: 1rem;
   background-color: coral;
   border-radius: 0.5rem;
+}
+
+.box.highlight {
+  border: 0.25rem solid #fff;
 }
